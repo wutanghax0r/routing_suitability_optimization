@@ -26,21 +26,21 @@ This script takes the filenames of two text file as input parameters on the comm
 1st parameter:
 file name of a text file containing a new-line (\n) separated list of driver's names.
 example:
-'''
+```
 Benino Sager
 John Smith
-'''
+```
 
 2nd parameter:
 file name of a text file containing a 2x new-line (\n\n) separaged list of addresses.
 example:
-'''
+```
 123 Dog Way
 San Diego, CA 92103
 
 742 Evergreen Terrace
 Vista, CA 92048
-'''
+```
 
 
 EXECUTION
@@ -52,14 +52,15 @@ Assumptions:
     file containing driver's names is named 'input_drivers'
 
 example:
+```
 php assign_drivers.php input_addresses input_drivers
-
+```
 
 OUTPUT
 ------
 Assuming the input files described above, this is the expected output:
 
-'''
+```
 ================================================================
     The Maximum suitability score has been calculated: '12'
          analyzed 2 permutations
@@ -74,4 +75,4 @@ John Smith (score - 4.5)
 ---------------------
 123 Dog Way
 San Diego, CA 92103
-'''
+```
