@@ -26,7 +26,6 @@ Input -
     Optionally after this it could be followed by a comma (,) and then a unit #.   Because of the
     multiline address format the delimiter then must be two newlines instead of one to 
     separate addresses. 
-
     Address and driver count:  I assumed I had to handle the case of there being more
     addresses than drivers, as well as the case of having more drivers than addresses.
 
