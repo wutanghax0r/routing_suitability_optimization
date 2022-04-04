@@ -13,6 +13,30 @@ all of the assignments.
 The script outputs the optimal driver to address assignments on the command line.
 
 
+ASSUMPTIONS
+-----------
+Because of ambiguity in the instructions I had to make the following assumptions.
+In each case, I would have asked the project manager, client or ss algorithm creators 
+for specifics.
+
+Input -
+    Address: I assumed that an address would be formatted in the standard multi line format
+    similar to what is written on an envelope.  The assumption about the first line
+    is that it will contain a street # followed by a space, followed by the street name.
+    Optionally after this it could be followed by a comma (,) and then a unit #.   Because of the
+    multiline address format the delimiter then must be two newlines instead of one to 
+    separate addresses. 
+
+    Address and driver count:  I assumed I had to handle the case of there being more
+    addresses than drivers, as well as the case of having more drivers than addresses.
+
+Algorithm -
+    Street and address name lengths: I assumed we are only counting the characters excluding
+    whitespace.  For example my name, "Benino Sager" would be 11 characters.  I also assumed
+    that the punctuation would be counted in the length.  'Oak Ln.' would be 6 characters.
+    
+
+
 REQUIREMENTS
 ------------
 Linux system running PHP 7
