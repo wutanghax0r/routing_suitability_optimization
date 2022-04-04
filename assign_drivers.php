@@ -107,7 +107,7 @@ function calculate_ss($driver, $street) {
 / * The format of the subsequent lines of the address 
 /   doesn't matter
 /
-/   Input: (String) Multilihne address string.
+/   Input: (String) Multiline address string.
 /
 /   Return output: (String) Normalized street name.
 *********************************************************/
@@ -126,7 +126,7 @@ function calculate_ss($driver, $street) {
 /       be swapped in place. 
 /
 /   Input: (Array Reference) An array of any content type.
-/          (Int||Strsng) Index of first array element.
+/          (Int||String) Index of first array element.
 /          (Int||String) Index of second array element.
 /   *normalized = all lowercase, all whitespace removed
 /
@@ -146,7 +146,7 @@ function arr_swap(&$array, $index1, $index2){
 /   a list of drivers & a list of destinations recursively.
 /   A single input array represents both a list of
 /   drivers and a list of destinations, where the array
-/   indicies represent the drivers, and the values 
+/   indices represent the drivers, and the values 
 /   represent the destinations. The result is stored 
 /   in an array passid to the function by reference.
 /
@@ -203,7 +203,7 @@ function sum_ss($arrPermutations, &$arrSsResults) {
 /   a list of drivers and a list of destinations.
 /   A single input array represents both a list of
 /   drivers and a list of destinations, where the array
-/   indicies represent the drivers, and the values 
+/   indices represent the drivers, and the values 
 /   represent the destinations. The result is stored 
 /   in an array passid to the function by reference.
 /
@@ -323,7 +323,7 @@ while(count($arrPermutations) < count($arrDrivers)) {
 
 $arrPermutationsResults;
 $intPermutationCounter = 0;
-//This function call would be removed, as well as the function definitionbelow for production code
+//This function call would be removed, as well as the function definition below for production code
 //just leaving it here for this assignment because it was my first attempt.  The non-recursive
 //implementation called just after this is faster. The recursive implementation worked, but
 //took 66% longer in my tests.
@@ -334,7 +334,7 @@ check_all_possible_assignments_for_max_ss_recursive($arrPermutationsResults, $ar
 //Output Results
 print("\n\n");
 print("================================================================\n");
-print("    The Maximum suitability score has been caculated: '{$arrPermutationsResults['score']}'\n");
+print("    The Maximum suitability score has been calculated: '{$arrPermutationsResults['score']}'\n");
 print("         analyzed $intPermutationCounter permutations\n");
 print("================================================================\n\n");
 

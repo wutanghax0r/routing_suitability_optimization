@@ -47,13 +47,13 @@ EXECUTION
 ---------
 
 Assumptions:
-    The files named as input parameters are in the same directory as the script itself.
+    The files named as input parameters are in a local subdirectory named input.
     file containing addresses is named 'input_addresses'
     file containing driver's names is named 'input_drivers'
 
 example:
 ```
-php assign_drivers.php input_addresses input_drivers
+php assign_drivers.php input/input_addresses input/input_drivers
 ```
 
 OUTPUT
